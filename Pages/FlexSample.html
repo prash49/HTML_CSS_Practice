@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Demo</title>
+
+    <style>
+        body {
+            padding: 2em;
+        }
+        
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: rgb(205, 238, 144);
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .mainContentItem {
+            text-align: left;
+            background: rgb(198, 120, 230);
+            flex: 3 0px;
+            order: 2;
+        }
+        
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        
+        .sideBarLeftItem {
+            background: rgb(202, 191, 130);
+            order: 1;
+        }
+        
+        .sideBarRightItem {
+            background: rgba(153, 243, 111, 0.356);
+            order: 3;
+        }
+        
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid rgb(177, 240, 76);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>HEADER - Sample Flexbox Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First Article</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas suscipit, quod tenetur hic molestias a atque aperiam dolorum corporis, facere laudantium expedita officia ratione quidem deleniti consectetur accusamus culpa. Obcaecati repudiandae
+                    est, beatae, eum maiores numquam qui dolor iste quo aut culpa! Recusandae hic quos blanditiis perspiciatis, dignissimos asperiores quisquam repudiandae laboriosam molestiae non vitae voluptates, assumenda eos id ad veritatis praesentium.
+                    Sed dolorem, eveniet harum laborum, repellat modi dolores maiores ex nemo ea placeat, deserunt quisquam nobis! Assumenda rerum tempore, maxime hic cumque, perspiciatis autem quia iure quisquam quis ut esse praesentium suscipit culpa,
+                    aliquid vitae? Quod, explicabo ea odit, maiores, mollitia esse quas aliquam at expedita aperiam corrupti minus. Voluptatem, inventore. Quam accusamus provident ducimus soluta a porro vitae, consequatur autem quibusdam quia placeat
+                    molestiae sapiente eos aliquam dicta ullam distinctio excepturi totam. Eveniet, vel rem? Sapiente dolorem hic iure. Animi, veritatis cupiditate at sit et a rerum nesciunt quia itaque, culpa numquam veniam debitis mollitia inventore,
+                    iure corrupti ad molestias ducimus repellendus reprehenderit. Quam, eius. Facere voluptate vero rem dignissimos! Minima impedit aut repellendus alias labore amet laboriosam odit nostrum neque perferendis repellat, iusto facilis consequuntur
+                    explicabo totam quia aliquam sunt repudiandae veniam laudantium ullam harum exercitationem? Natus numquam optio cumque laboriosam ab nostrum exercitationem accusantium, voluptatibus quis animi corrupti? Velit expedita natus quaerat
+                    repellendus amet, culpa non, pariatur dicta in animi repudiandae saepe deserunt atque porro iste modi illum aut? Minus reiciendis rerum dolores id at tenetur, veritatis nostrum dolorem commodi est odio dolorum placeat cupiditate? Quo
+                    iusto voluptas hic odit distinctio voluptate cumque sint doloribus, veniam aliquam. Voluptatibus minus explicabo, quaerat nostrum nisi pariatur eius totam optio tempore! Temporibus ipsum reprehenderit earum corporis eligendi? Nihil,
+                    voluptatibus. Placeat esse nobis repellat laudantium magni similique ratione, suscipit aperiam a doloribus quaerat, quo ipsam perspiciatis. Nihil, amet dolores.</p>
+            </article>
+            <article>
+                <h2>Third Article</h2>
+                <p>Sesuscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reantium, voluptatibus quis animi corrupti? Velit expedita natus quaerat repellendus amet, culpa non, pariatur dicta in animi repudiandae saepe deserunt
+                    atque porro iste modi illum aut? Minus reiciendis rerum dolores id at tenetur, veritatis nostrum dolorem commodi est odio dolorum placeat cupiditate? Quo iusto voluptas hic odit distinctio voluptate cumque sint doloribus, veniam aliquam.
+                    Voluptatibus minus explicabo, quaerat nostrum nisi pariatur eius totam optio tempore! Temporibus ipsum reprehenderit earum corporis eligendi? Nihil, voluptatibus. Placeat esse nobis repellat laudantium magni similiquprehenderit qui
+                    in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </article>
+        </section>
+
+        <sideBar class="sideBarItem sideBarLeftItem">
+            <div class="center">
+                <p>Left Side Bar</p>
+            </div>
+        </sideBar>
+
+        <sideBar class="sideBarItem sideBarRightItem">
+            <div class="center">
+                <p>Right Side Bar</p>
+            </div>
+        </sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
